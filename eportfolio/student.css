@@ -1,0 +1,217 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header and Top Right Menu */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .top-right-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .top-right-menu .profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header .top-right-menu .profile-icon img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+header .top-right-menu .logout-btn {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header .top-right-menu .logout-btn:hover {
+    background-color: #e62b2b;
+}
+
+/* Main Layout: Sidebar and Content */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Vertical Sidebar */
+.sidebar {
+    width: 250px;
+    background-color:  #ffffff;
+    color: #003366;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    height: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: #003366;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #005fa3;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.sidebar ul li a i {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="file"] {
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Portfolio Section */
+#portfolio-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.course-folder {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-folder h3 {
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+.portfolio-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.portfolio-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.file-name {
+    font-size: 1.1rem;
+}
+
+.view-file {
+    font-size: 1rem;
+    color: #003366;
+    text-decoration: none;
+}
+
+.view-file:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

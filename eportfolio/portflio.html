@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ePortfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-right-menu">
+            <div class="profile-icon">
+                <img src="student.jpg" alt="Profile Picture">
+                <span>Student Name</span>
+            </div>
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Vertical Sidebar Menu -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Rwanda Polytechnic Logo">
+                <span>ePortfolio Student</span>
+            </div>
+            <ul>
+                <li><a href="studenthome.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#upload"><i class="fas fa-upload"></i> Upload File</a></li>
+                <li><a href="portflio.html"><i class="fas fa-folder-open"></i> Portfolio</a></li>
+                <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <h2>Your Portfolio</h2>
+                <div id="portfolio-courses">
+                    <!-- Example of courses and files listed under each -->
+                    <div class="course-folder">
+                        <h3>Course 1: Web Development</h3>
+                        <ul class="portfolio-list">
+                            <li>
+                                <span class="file-name">Assignment 1 - HTML Basics</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                            <li>
+                                <span class="file-name">Project 2 - CSS Layout</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course-folder">
+                        <h3>Course 2: JavaScript Programming</h3>
+                        <ul class="portfolio-list">
+                            <li>
+                                <span class="file-name">Assignment 1 - JS Basics</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                            <li>
+                                <span class="file-name">Project 3 - DOM Manipulation</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Add more courses dynamically here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rwanda Polytechnic - All Rights Reserved</p>
+    </footer>
+
+    <script src="student.js"></script>
+</body>
+</html>

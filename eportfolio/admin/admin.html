@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin Dashboard - ePortfolio</title>
+    <link rel="stylesheet" href="admin.css">
+    <script defer src="admin.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="ePortfolio Logo">
+                <span>ePortfolio - Super Admin</span>
+            </div>
+            <ul>
+                <li><a href="#dashboard" class="active">Dashboard</a></li>
+                <li><a href="#manage-users">Manage Users</a></li>
+                <li><a href="#manage-files">Manage Files</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout" class="btn">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="dashboard" class="admin-section">
+        <h1>Welcome, Super Admin</h1>
+        <p>Control and manage the entire ePortfolio system.</p>
+    </section>
+    
+    <section id="manage-users" class="admin-section">
+        <h2>Manage Users</h2>
+        <button onclick="addUser()">Add User</button>
+        <div class="table-container">
+            <table>
+                <tr><th>ID</th><th>Name</th><th>Email</th><th>Actions</th></tr>
+                <tbody id="userList"></tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section id="manage-files" class="admin-section">
+        <h2>Manage Files</h2>
+        <div class="table-container">
+            <table>
+                <tr><th>File Name</th><th>User</th><th>Action</th></tr>
+                <tbody id="fileList"></tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section id="settings" class="admin-section">
+        <h2>System Settings</h2>
+        <label><input type="checkbox" id="toggleUploads"> Enable Uploads</label>
+        <button onclick="saveSettings()">Save Settings</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ePortfolio - Rwanda Polytechnic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

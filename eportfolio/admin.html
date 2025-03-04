@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin Dashboard - ePortfolio</title>
+    <link rel="stylesheet" href="admin.css">
+    <!-- Include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-right-menu">
+            <div class="profile-icon">
+                <img src="admin.jpg" alt="Profile Picture">
+                <span>Admin</span>
+            </div>
+            <div class="notifications">
+                <i class="fas fa-bell"></i>
+                <span class="notification-count">3</span>
+            </div>
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Vertical Sidebar Menu -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logobg.png" alt="Rwanda Polytechnic Logo">
+                <span>ePortfolio Admin</span>
+            </div>
+            <ul>
+                <li><a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#manage-users"><i class="fas fa-users-cog"></i> Manage Users</a></li>
+                <li><a href="#manage-files"><i class="fas fa-file-upload"></i> Manage Files</a></li>
+                <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                <li><a href="#settings"><i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Overview -->
+            <section id="dashboard" class="admin-section">
+                <h1>Welcome, Super Admin</h1>
+                <p>Monitor system activities and manage users, files, and settings.</p>
+            </section>
+
+            <!-- Manage Users with Roles -->
+            <section id="manage-users" class="admin-section">
+                <h2>Manage Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reg Number</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- User data will be listed here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Manage Uploaded Files -->
+            <section id="manage-files" class="admin-section">
+                <h2>Manage Files</h2>
+                <ul id="fileList">
+                    <!-- List of uploaded files will appear here -->
+                </ul>
+            </section>
+
+            <!-- Notifications Section -->
+            <section id="notifications" class="admin-section">
+                <h2>Notifications</h2>
+                <ul id="notificationsList">
+                    <li>No new notifications.</li>
+                </ul>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics" class="admin-section">
+                <h2>Analytics</h2>
+                <div class="analytics-cards">
+                    <div class="card">Total Users: <span id="totalUsers">0</span></div>
+                    <div class="card">Total Files: <span id="totalFiles">0</span></div>
+                    <div class="card">Total Notifications: <span id="totalNotifications">0</span></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rwanda Polytechnic - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

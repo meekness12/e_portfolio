@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio - ePortfolio</title>
+    <link rel="stylesheet" href="student.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-right-menu">
+            <div class="profile-icon">
+                <img src="student.jpg" alt="Profile Picture">
+                <span>Student Name</span>
+            </div>
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Vertical Sidebar Menu -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Rwanda Polytechnic Logo">
+                <span>ePortfolio Student</span>
+            </div>
+            <ul>
+                <li><a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#upload"><i class="fas fa-upload"></i> Upload File</a></li>
+                <li><a href="#portfolio"><i class="fas fa-folder-open"></i> Portfolio</a></li>
+                <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Current Year Portfolio Section -->
+            <section id="upload">
+                <h2>Upload File for Current Class</h2>
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course">
+                        <option value="web_dev">Web Development</option>
+                        <option value="java_prog">Java Programming</option>
+                        <option value="database">Database Systems</option>
+                    </select>
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="file" required>
+                    <button type="submit">Upload</button>
+                </form>
+            </section>
+
+            <!-- Portfolio Section (Current and Past Years) -->
+            <section id="portfolio">
+                <h2>Your Portfolio</h2>
+                <div id="portfolio-courses">
+                    <!-- Current Year Portfolio -->
+                    <div class="course-folder">
+                        <h3>Current Year: Year 1</h3>
+                        <ul class="portfolio-list">
+                            <li>
+                                <span class="file-name">Assignment 1 - HTML Basics</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                            <li>
+                                <span class="file-name">Project 2 - CSS Layout</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Past Year Portfolio (Once Promoted) -->
+                    <div class="course-folder">
+                        <h3>Previous Year: Year 0</h3>
+                        <ul class="portfolio-list">
+                            <li>
+                                <span class="file-name">Assignment 1 - JS Basics</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                            <li>
+                                <span class="file-name">Project 3 - JavaScript DOM</span>
+                                <a href="#" class="view-file"><i class="fas fa-eye"></i> View</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rwanda Polytechnic - All Rights Reserved</p>
+    </footer>
+
+    <script src="student.js"></script>
+</body>
+</html>

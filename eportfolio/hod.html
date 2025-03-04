@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head of Department Dashboard - ePortfolio</title>
+    <link rel="stylesheet" href="hod.css">
+    <!-- Include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-right-menu">
+            <div class="profile-icon">
+                <img src="admin.jpg" alt="Profile Picture">
+                <span>HOD</span>
+            </div>
+            <div class="notifications">
+                <i class="fas fa-bell"></i>
+                <span class="notification-count">3</span>
+            </div>
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Vertical Sidebar Menu -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Rwanda Polytechnic Logo">
+                <span>ePortfolio HOD</span>
+            </div>
+            <ul>
+                <li><a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#student-management"><i class="fas fa-user-graduate"></i> Student</a></li>
+                <li><a href="#class-management"><i class="fas fa-chalkboard-teacher"></i> Class </a></li>
+                <li><a href="#lecture-management"><i class="fas fa-book"></i> Lecture</a></li>
+                <li><a href="#portfolio-management"><i class="fas fa-file-upload"></i> Portfolio</a></li>
+                <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Overview -->
+            <section id="dashboard" class="admin-section">
+                <h1>Welcome, Head of Department</h1>
+                <p>Manage your department's activities, students, classes, lectures, and portfolios effectively.</p>
+            </section>
+
+            <!-- Student Management -->
+            <section id="student-management" class="admin-section">
+                <h2>Student Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reg Number</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Student data will be listed here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Class Management -->
+            <section id="class-management" class="admin-section">
+                <h2>Class Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class Name</th>
+                            <th>Instructor</th>
+                            <th>Schedule</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Class data will be listed here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Lecture Management -->
+            <section id="lecture-management" class="admin-section">
+                <h2>Lecture Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lecture Title</th>
+                            <th>Class</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Lecture data will be listed here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Portfolio Management -->
+            <section id="portfolio-management" class="admin-section">
+                <h2>Portfolio Management</h2>
+                <ul id="portfolioList">
+                    <!-- Portfolio items will be listed here -->
+                </ul>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics" class="admin-section">
+                <h2>Department Analytics</h2>
+                <div class="analytics-cards">
+                    <div class="card">Total Students: <span id="totalStudents">0</span></div>
+                    <div class="card">Total Classes: <span id="totalClasses">0</span></div>
+                    <div class="card">Total Lectures: <span id="totalLectures">0</span></div>
+                    <div class="card">Total Portfolios: <span id="totalPortfolios">0</span></div>
+                </div>
+            </section>
+
+            <!-- Notifications Section -->
+            <section id="notifications" class="admin-section">
+                <h2>Notifications</h2>
+                <ul id="notificationsList">
+                    <li>No new notifications.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rwanda Polytechnic - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

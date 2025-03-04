@@ -1,0 +1,266 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light white background for the entire page */
+    color: #333;
+}
+
+/* Header with Menu */
+header {
+    background-color: #ffffff; /* White background for the header */
+    color: #003366; /* Dark Blue text color for contrast */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for the menu */
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #8d8f90; /* Dark blue text color for links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #262674ed; /* Yellow color for active or hovered links */
+    border-radius: 5px;
+}
+
+nav .language-switcher {
+    background-color: #fff;
+    border: 1px solid #003366;
+    padding: 5px;
+    font-size: 14px;
+    color: #003366;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background-color: #f9f9f9; /* Light white background for the hero section */
+    padding: 50px 20px;
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.hero-content {
+    display: flex; /* Make hero-content a flex container */
+    justify-content: space-between; /* Add space between the text and image */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Ensure it spans full width */
+    max-width: 1200px; /* Optional: limit the width for larger screens */
+}
+
+.text-content {
+    flex: 1; /* Take up remaining space */
+    padding-right: 10px; /* Space between text and image */
+    padding-left: 30px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.text-content .btn {
+    background-color: #FFD700; /* Yellow button */
+    color: #003366;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.text-content .btn:hover {
+    background-color: #FFA500; /* Darker yellow for hover */
+}
+
+.image-content {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.image-content img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Announcements Section */
+.announcements {
+    background-color: #e9f4fb; /* Light blue for the announcements section */
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.announcement-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.announcement-box p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #003366;
+}
+
+footer {
+    background-color: #003366; /* Dark Blue footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/*student*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.signup-form {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.signup-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-form button {
+    width: 80%;
+    padding: 10px;
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-form button:hover {
+    background-color: #f1f1ef;
+    color: #0866c4;
+}
+/* Login */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.login-form {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD700;
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-form button:hover {
+    background-color: #FFA500;
+}
